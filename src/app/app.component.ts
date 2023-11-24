@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { GifsSearchBoxComponent } from './shared/components/gifs-search-box/gifs-search-box.component';
 import { HomePageComponent } from './gifs/pages/home-page/home-page.component';
+import { CardListComponent } from './shared/components/card-list/card-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SidebarComponent, HomePageComponent, GifsSearchBoxComponent],
+  imports: [CommonModule, RouterOutlet, SidebarComponent, HomePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
