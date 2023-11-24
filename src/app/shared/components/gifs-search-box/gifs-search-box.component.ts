@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,4 +9,18 @@ import { CommonModule } from '@angular/common';
 })
 export class GifsSearchBoxComponent {
 
+  @ViewChild('txtTagInput')
+  public tagInput!: ElementRef<HTMLInputElement>
+
+  constructor() {
+  }
+
+  searchTag() {
+    const newTag = this.tagInput.nativeElement.value;
+    console.log({ newTag })
+  }
+
 }
+
+
+
